@@ -82,15 +82,22 @@
     box-shadow: none !important
 }
 
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
  body {
     width:100%;
-    color:var(--default);
-    font-family:'Arsenal', sans-serif;
-    font-size: 16px;
+    font-family:'Gilroy', sans-serif;
+    font-size: 18px;
     font-weight: 400;
+    color: #1A1A18;
     line-height: normal;
     min-width:320px;
-    overflow-x:hidden;}
+    overflow-x:hidden;
+}
 
 
 /**
@@ -103,5 +110,103 @@
 
 /* Container */
 .container {
-    min-width: 1660px;
+    max-width: 1660px;
+    margin: 0 auto;
 }
+
+/**
+ * Intro
+ */
+.intro {
+    background: #1b791f url("../images/bg/intro-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 685px;
+}
+
+.intro-content {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    margin-top: 146px;
+    
+}
+
+.intro-title {
+    font-size: 54px;
+    font-weight: 500;
+    line-height: 1.037;
+    color: white;
+    width: 12em;
+}
+
+/**
+ * Header
+ */
+ header {
+    height: 110px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .header-logo {
+    
+ }
+
+ .header-socials {
+    display: flex;
+    align-items: center;
+ }
+
+ .header-phone {
+    margin-left: 21px;
+    padding: 16px 32px;
+    border-radius: 8px;
+    background-color: #fff;
+ }
+
+ .header-phone-link {
+    text-decoration: none;
+    color: inherit;
+ }
+
+ /* Nav */
+.nav-main {
+    font-weight: 500;
+    color: #fff;
+}
+
+.nav-main ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-link {
+    list-style: none;
+    margin-left: 35px;
+}
+
+.nav-link:first-child {
+    margin: 0;
+
+
+}
+
+.nav-link a {
+    color: inherit;
+    text-decoration: none;
+    
+}
+
+.nav-link a:hover {
+    text-decoration: underline;
+    cursor: url("/assets/template/images/cursors/white-cursor.svg") pointer;
+}
+
+
+
