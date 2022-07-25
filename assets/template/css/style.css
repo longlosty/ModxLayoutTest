@@ -1,0 +1,107 @@
+/* Fonts */
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/Gilroy/GilroyLight/Gilroy-Light.eot');
+	src: local('☺'), url('../fonts/Gilroy/GilroyLight/Gilroy-Light.woff') format('woff'), url('../fonts/Gilroy/GilroyLight/Gilroy-Light.ttf') format('truetype'), url('../fonts/Gilroy/GilroyLight/Gilroy-Light.svg') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/Gilroy/GilroyRegular/gilroy-regular.eot');
+	src: local('☺'), url('../fonts/Gilroy/GilroyRegular/gilroy-regular.woff') format('woff'), url('../fonts/Gilroy/GilroyRegular/gilroy-regular.ttf') format('truetype'), url('../fonts/Gilroy/GilroyRegular/gilroy-regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/Gilroy/GilroySemibold/gilroy-semibold.eot');
+	src: local('☺'), url('../fonts/Gilroy/GilroySemibold/gilroy-semibold.woff') format('woff'), url('../fonts/Gilroy/GilroySemibold/gilroy-semibold.ttf') format('truetype'), url('../fonts/Gilroy/GilroySemibold/gilroy-semibold.svg') format('svg');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/Gilroy/GilroyBold/gilroy-bold.eot');
+	src: local('☺'), url('../fonts/Gilroy/GilroyBold/gilroy-bold.woff') format('woff'), url('../fonts/Gilroy/GilroyBold/gilroy-bold.ttf') format('truetype'), url('../fonts/Gilroy/GilroyBold/gilroy-bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/Gilroy/GilroyExtraBold/Gilroy-ExtraBold.eot');
+	src: local('☺'), url('../fonts/Gilroy/GilroyExtraBold/Gilroy-ExtraBold.woff') format('woff'), url('../fonts/Gilroy/GilroyExtraBold/Gilroy-ExtraBold.ttf') format('truetype'), url('../fonts/Gilroy/GilroyExtraBold/Gilroy-ExtraBold.svg') format('svg');
+	font-weight: 800;
+	font-style: normal;
+}
+
+
+/**
+ * Reset
+ */
+ * {
+    line-height: normal;
+}
+
+ a {
+    outline: none !important;
+}
+
+ a:hover {
+    color: currentColor;
+    text-decoration: none;
+}
+
+ button {
+    outline: none !important;
+}
+
+ h1, h2, h3, h4, h5, h6 {
+    margin:0;
+}
+   /**
+   * ? If u'll use
+   */
+ figure {
+    margin-bottom: 0;
+}
+
+
+ ul, ol, p, address {
+    margin: 0;
+    padding: 0
+}
+
+ button:focus, input:focus, textarea:focus 
+ {
+    outline: none !important;
+    box-shadow: none !important
+}
+
+ body {
+    width:100%;
+    color:var(--default);
+    font-family:'Arsenal', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    min-width:320px;
+    overflow-x:hidden;}
+
+
+/**
+ * Template
+ */
+ .template {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+/* Container */
+.container {
+    min-width: 1660px;
+}
