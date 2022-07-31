@@ -399,6 +399,7 @@
 .cards-item {
     background: #EDEFCA;
     margin-right: 19px;
+    border-radius: 16px;
 }
 
 .cards-item:last-child {
