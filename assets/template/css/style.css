@@ -339,7 +339,6 @@
 /**
  * About
  */
-
 .about {
     background: #b98787 url(../images/bg/about-bg.png);
     background-position: center;
@@ -350,6 +349,7 @@
 
     height: 1030px;
     position: relative;
+
 }
 
 .about-content {
@@ -363,7 +363,7 @@
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
     
     position: absolute;
-    top: 236px;
+    top: 171px;
     padding-bottom: 58px;
     margin: 0 450px;
 }
@@ -396,6 +396,7 @@
     margin-top: 58px;
 }
 
+ /* Cards */
 .cards-item {
     background: #EDEFCA;
     margin-right: 19px;
@@ -427,3 +428,89 @@
     margin-top: 3px;
    
 }
+
+/**
+ * Reviews
+ */
+.reviews {
+    
+}
+
+.reviews-intro {
+    display: flex;
+    align-items: baseline;
+}
+
+.reviews-header {
+    font-size: 36px;
+    line-height: 1.16;
+    font-weight: 500;
+
+    margin-right: 28px;
+}
+
+.allreviews-header {
+    font-size: 18px;
+    line-height: 1.16;
+    font-weight: 400;
+    color: #58595B;
+}
+
+.reviews-content {
+    display: flex;
+}
+
+.reviews-item {
+    margin-right: 20px;
+
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    
+    width: 33.333%;
+}
+
+.review-person {
+    font-size: 18px;
+    line-height: 1.38;
+    font-weight: 500;
+
+    margin-top: 33px;
+    margin-left: 28px;
+} 
+
+.review-rating {
+    display: flex;
+    margin-top: 7px;
+    margin-left: 28px;
+}
+
+.review-text {
+    font-size: 16px;
+    line-height: 1.25;
+    margin: 28px 19px 44px 28px;
+
+    color: #58595B;
+}
+
+ /* Rating */
+.rating-stars svg {
+    margin-right: 4.44px;
+}
+
+.rating-stars svg:last-child {
+    margin-right: 10px;
+}
+
+.rating-text {
+    font-size: 16px;
+    line-height: 1.25;
+    color: #919191;
+}
+
+
+
+
+
+
+
