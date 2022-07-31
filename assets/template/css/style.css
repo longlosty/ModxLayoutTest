@@ -309,5 +309,30 @@
     font-weight: 500;
 }
 
+.services-slider {
+    margin-top: 58px;
+    display: flex;
+}
 
+.services-item {
+    position: relative;
+    border-radius: 16px;
+    margin-right: 20px;
+}
+
+.services-item:last-child {
+    margin-right: 0;
+}
+
+.services-title {
+    position: absolute;
+    top: 461px;
+    left: 25px;
+
+    font-size: 26px;
+    line-height: 1.7;
+    letter-spacing: 0.02em;
+    font-weight: 600;
+    color: #fff;
+}
 
