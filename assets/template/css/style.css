@@ -508,6 +508,134 @@
     color: #919191;
 }
 
+/**
+ * Articles
+ */
+.articles {
+    position: relative;
+    margin-top: 100px;
+}
+
+.articles-bg {
+    position: absolute;
+    top: 90px;
+    left: 130px;
+
+
+    background: rgba(255, 255, 255, 0.59);
+    border: 1px solid #6D9121;
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+}
+
+.articles-content {
+    padding: 113px 251px 190px 107px;
+
+}
+
+.articles-title {
+    font-size: 36px;
+    line-height: 1.16;
+    font-weight: 500;
+}
+
+.articles-subtitle {
+    font-size: 20px;
+    line-height: 1.15;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.articles-text {
+    font-size: 18px;
+    line-height: 1.4;
+    margin-top: 15px;
+}
+
+ /* Btn */
+.articles-btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 17px 53px;
+
+    font-size: 17px;
+    line-height: 1.17;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+
+    background-color: #6D9121;
+    border: 1px solid #6D9121;
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px rgba(99, 141, 10, 0.49);
+
+    margin-top: 64px;
+
+    transition: box-shadow .1s;
+    -webkit-transition: box-shadow .1s;
+}
+
+.articles-btn:hover {
+    color: #fff;
+    box-shadow: 0px 0px 0px #fff;
+}
+
+ /* Slider */
+.articles-slider {
+    position: absolute;
+    top: 35px;
+    left: 540px;
+    display: flex;
+    align-items: center;
+}
+
+.articles-item {
+    margin-right: 20px;
+    border-radius: 16px;
+    filter: drop-shadow(0px 3.17336px 19.0401px rgba(88, 87, 87, 0.23));
+
+   
+}
+
+.articles-time {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin-top: 400px;
+
+}
+
+.articles-shorttitle {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #fff;
+}
+
+
+.articles-arrows {
+    display: flex;
+    position: absolute;
+    left:0;
+    bottom: 25px;
+}
+
+.articles-arrows a {
+    margin-right: 29px;   
+    text-decoration: none;
+}
+
+.articles-arrows a:last-child {
+    margin-right: 0;
+}
+
+.articles-item  {
+    /* padding-top: 25px; */
+}
+
+
+
 
 
 
