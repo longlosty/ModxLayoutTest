@@ -1,0 +1,39 @@
+.intro {
+    background: $introBackground;
+    @include BgPosition();
+
+    &::before {
+        display: block;
+        content: "";
+
+        background: $introGradient;
+        transform: rotate(-180deg);
+        
+        height: 319px;
+        width: 100%;
+
+        position: absolute;
+    }
+
+    .intro-content {
+        display: flex;
+        justify-content: center;
+        text-align: center;    
+        align-items: center;
+        flex-direction: column;
+    
+        padding-top: 256px;
+    }
+
+    .intro-title {
+        font-size: 54px;
+        font-weight: 500;
+        line-height: 1.037;
+        color: white;
+        width: 12em;
+    }
+
+    .intro-form {
+        margin-top: 225px;
+    }
+}

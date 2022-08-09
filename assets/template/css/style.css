@@ -88,6 +88,11 @@ ul, ol, p, address {
     box-sizing: border-box;
 }
 
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     width:100%;
     font-family:'Gilroy', sans-serif;
@@ -118,20 +123,19 @@ body {
 .intro-container {
     max-width: 1650px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 /**
  * Intro
- */
+*/
 .intro {
-    /* background: linear-gradient(to top, rgba(11, 29, 38, 0) 0%, #0B1D26 100%), #1b791f url("../images/bg/intro-bg.jpg"); */
     background: #1b791f url("../images/bg/intro-bg.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 
     height: 685px;
-
 }
 
 .intro::before {
@@ -171,7 +175,7 @@ body {
 
 /**
  * Header
- */
+*/
 header {
     display: flex;
     justify-content: space-between;
@@ -189,27 +193,45 @@ header {
     z-index: 1000;
 }
 
-/* .header-gradient {
-    background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 100%);
-    transform: rotate(-180deg);
+.header-logo {
+    height:90px;
+}
 
-    width: 100%;
-    height: 395px;
-    position: absolute;
-    left: 0;
-    
-} */
+@media (max-width: 1349px) {
+    .header-logo {
+        height: 75px;
+    }
+}
 
 .header-socials {
     display: flex;
     align-items: center;
 }
 
-.header-phone {
+@media (max-width: 1349px) {
+    .whatsapp-link {
+        width: 40px;
+    }
+}
+
+.header-phone-link {
     margin-left: 21px;
     padding: 16px 32px;
     border-radius: 8px;
     background-color: #fff;
+}
+
+@media (max-width: 1349px) {
+    .header-phone-link {
+        margin-left: 10px;
+        padding: 10px 15px;;
+    }
+}
+
+@media (max-width:1199px) {
+    .header-phone-link {
+        display: none;
+    }
 }
 
 .header-phone-link {
@@ -217,7 +239,7 @@ header {
     color: inherit;
 }
 
- /* Nav */
+/* Nav */
 .nav-main {
     font-weight: 500;
     color: #fff;
@@ -233,10 +255,14 @@ header {
     margin-left: 35px;
 }
 
+@media (max-width: 1449px) {
+    .nav-link {
+        margin-left: 15px;
+    }
+}
+
 .nav-link:first-child {
     margin: 0;
-
-
 }
 
 .nav-link a {
@@ -253,7 +279,7 @@ header {
 
 /**
  * Bath-houses
- */
+*/
 .bath-houses {
     margin: 78px 0 83px 0;
 }
@@ -328,11 +354,7 @@ header {
 
 /**
  * Services
- */
-.services {
-
-}
-
+*/
 .services-header {
     font-size: 36px;
     line-height: 0.5;
@@ -368,7 +390,7 @@ header {
 
 /**
  * About
- */
+*/
 .about {
     background: #b98787 url(../images/bg/about-bg.png);
     background-position: center;
@@ -426,7 +448,7 @@ header {
     margin-top: 58px;
 }
 
- /* Cards */
+/* Cards */
 .cards-item {
     background: #EDEFCA;
     margin-right: 19px;
@@ -461,11 +483,7 @@ header {
 
 /**
  * Reviews
- */
-.reviews {
-    
-}
-
+*/
 .reviews-intro {
     display: flex;
     align-items: baseline;
@@ -528,7 +546,7 @@ header {
     color: #58595B;
 }
 
- /* Rating */
+/* Rating */
 .rating-stars svg {
     margin-right: 4.44px;
 }
@@ -545,7 +563,7 @@ header {
 
 /**
  * Articles
- */
+*/
 .articles {
     margin-top: 100px;
     position: relative;
@@ -587,7 +605,7 @@ header {
     margin-top: 15px;
 }
 
- /* Btn */
+/* Btn */
 .articles-btn {
     display: inline-block;
     vertical-align: top;
@@ -615,7 +633,7 @@ header {
     box-shadow: 0px 0px 0px #fff;
 }
 
- /* Slider */
+/* Slider */
 .articles-slider {
     position: absolute;
     top: 35px;
@@ -666,7 +684,7 @@ header {
 
 /**
  * Footer
- */
+*/
 footer {
     background-color: #7C9577;
     margin-top: 878px;
@@ -733,10 +751,8 @@ address p a:hover {
     margin-right: 15px;
     text-decoration: none;
 }
- /* Footer-nav */
-.footer-nav {
 
-}
+/* Footer-nav */
 .fnav-title {
     font-size: 20px;
     line-height: 0.9;
@@ -766,7 +782,7 @@ address p a:hover {
     text-decoration: underline;
 }
 
- /* Privacy */
+/* Privacy */
 .footer-privacy {
     margin-left: 340px;
     margin-top: 35px;
@@ -802,12 +818,3 @@ address p a:hover {
     text-decoration: none;
     color: inherit;
 }
-
-
-
-
-
-
-
-
-
