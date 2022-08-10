@@ -1,0 +1,15 @@
+$introColor : #fff;
+$primaryColor: #1A1A18;
+$priceColor: #6D9121;
+$reviewTextColor: #58595B;
+
+$introBackground: #1b791f url("../images/bg/intro-bg.jpg");
+$introGradient: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 100%);
+
+$aboutBackground: #b98787 url(../images/bg/about-bg.png);
+
+@mixin BgPosition {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
