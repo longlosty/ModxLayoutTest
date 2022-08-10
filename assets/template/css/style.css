@@ -569,7 +569,7 @@ header {
     text-decoration: none;
 }
 
-.header-link a:hover {
+.header-link:hover{
     text-decoration: underline;
     cursor: url("/assets/template/images/cursors/white-cursor.svg") pointer;
 }
@@ -619,6 +619,7 @@ header {
     margin-top: 55px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 @media (max-width:449px) {
@@ -631,6 +632,20 @@ header {
     text-decoration: none;
     color: inherit;
 }
+
+@media (max-width: 1449px) {
+    .bath-item {
+        width: fit-content;
+        margin-right: 20px;
+    }
+
+    /* .bath-item:nth-child(odd) {
+        margin-left: 225px;
+        margin-right: 100px;    
+    } */
+
+}
+
 
 .bath-item:hover .bath-preview img{
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
