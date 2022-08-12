@@ -122,33 +122,31 @@ new Swiper("#sb8 .swiper", {
 // }
 
 /* Section: Services */
-new Swiper("#test .swiper", {
-    slidesPerView: 2,
+new Swiper("#sliderServices .swiper", {
+    slidesPerView: 5,
+    spaceBetween: 15,
 
     breakpoints: {
-        839: {
-            slidesPerView: 3, 
-            spaceBetween: 15,
-        },
-
-        1259: {
-            slidesPerView: 4,
-            spaceBetween: 15,
-        },
-
-        1689: {
-            slidesPerVIew: 5,
-            spaceBetween: 15,
-        },
+        549: {
+        spaceBetween: 20,
+        }   
     },
-    
-    spaceBetween: 15000,
-    // loop: true,
+
+    loop: true,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
-  });
+});
+
+/* Section: About */
+const aboutMblImg = document.querySelector('.about-image');
+const clientWidth = window.clientWidth;
+
+if(clientWidth < 699) aboutMblImg.classList.add('active')
+    else aboutMblImg.classList.remove('active');
+
+
 
 
 
