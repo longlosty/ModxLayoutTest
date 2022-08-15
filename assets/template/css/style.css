@@ -864,6 +864,21 @@ header {
     .about {
         background: #fff;
         display: block;
+        margin-top: 65px;
+        margin-bottom: 63px;
+        height: 600px;
+    }
+}
+
+@media (max-width: 449px) {
+    .about {
+        height: 650px;
+    }
+}
+
+@media (max-width: 399px) {
+    .about {
+        height: 675px;
     }
 }
 
@@ -913,6 +928,7 @@ header {
         border-radius: 0;
         padding: 0 15px;
         align-items: unset;
+        top: 0;
 
         margin: 0;
         width: 99vw;
@@ -929,11 +945,18 @@ header {
 
 @media (max-width: 699px) {
     .about-title {
-        font-size: 20px;
+        font-size: 25px;
         font-weight: 600;
         text-align: left;
 
         margin-bottom: 25px;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 499px) {
+    .about-title {
+        font-size: 20px;
     }
 }
 
@@ -942,8 +965,10 @@ header {
     display: none;
 }
 
-.about-image .active {
-    display: block;
+@media (max-width: 699px) {
+    .about-image {
+        display: block;
+    }
 }
 
 .about-subtitle {
@@ -956,10 +981,16 @@ header {
 
 @media (max-width: 699px) {
     .about-subtitle {
-        font-size: 16px;
+        font-size: 18px;
         text-align: left;
 
         margin-top: 36px;
+    }
+}
+
+@media (max-width: 499px) {
+    .about-subtitle {
+        font-size: 16px;
     }
 }
 
@@ -978,9 +1009,15 @@ header {
 
 @media (max-width: 699px) {
     .about-text {
-        font-size: 15px;
+        font-size: 16px;
         font-weight: 400;
         margin: 16px 0;
+    }
+}
+
+@media (max-width: 499px) {
+    .about-text {
+        font-size: 15px;
     }
 }
 
@@ -1080,12 +1117,31 @@ header {
     align-items: baseline;
 }
 
+@media (max-width: 699px) {
+    .reviews-intro {
+        justify-content: space-between;
+    }
+}
+
 .reviews-header {
     font-size: 36px;
     line-height: 1.16;
     font-weight: 500;
 
     margin-right: 28px;
+}
+
+@media (max-width: 699px) {
+    .reviews-header {
+        font-size: 25px;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 499px) {
+    .reviews-header {
+        font-size: 20px;
+    }
 }
 
 .allreviews-header {
@@ -1095,8 +1151,29 @@ header {
     color: #58595B;
 }
 
+@media (max-width: 699px) {
+    .allreviews-header  {
+        font-size: 16px;
+    }
+}
+
 .reviews-content {
     display: flex;
+    margin-top: 45px;
+}
+
+@media (max-width: 699px) {
+    .reviews-content  {
+        margin-top: 25px;
+    }
+}
+
+.reviews-content .slider {
+    max-width: 1920px;
+}
+
+.reviews-content .swiper {
+    overflow: visible;
 }
 
 .reviews-item {
@@ -1107,6 +1184,30 @@ header {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
     
     width: 33.333%;
+}
+
+@media (min-width: 999px) {
+    .reviews-item  {
+        max-width: 470px;
+    }
+}
+
+@media (max-width: 999px) {
+    .reviews-item  {
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 799px) {
+    .reviews-item  {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 699px) {
+    .reviews-item  {
+        max-width: 250px;
+    }
 }
 
 .reviews-item a {
@@ -1123,10 +1224,23 @@ header {
     margin-left: 28px;
 } 
 
+@media (max-width: 699px) {
+    .review-person   {
+        font-size: 16px;
+    }
+}
+
 .review-rating {
     display: flex;
     margin-top: 7px;
     margin-left: 28px;
+}
+
+@media (max-width: 699px) {
+    .review-rating   {
+        margin-top: 3px;
+        margin-left: 16px;
+    }
 }
 
 .review-text {
@@ -1135,6 +1249,13 @@ header {
     margin: 28px 19px 44px 28px;
 
     color: #58595B;
+}
+
+@media (max-width: 699px) {
+    .review-text {
+        font-size: 14px;
+        margin: 23px 14px 26px 15px;
+    }
 }
 
 /* Rating */
@@ -1146,10 +1267,26 @@ header {
     margin-right: 10px;
 }
 
+@media (max-width: 699px) {
+    .rating-stars svg  {
+        margin-right: 3.55px;
+    }
+
+    .rating-stars svg:last-child {
+        margin-right: 7px;
+    }
+}
+
 .rating-text {
     font-size: 16px;
     line-height: 1.25;
     color: #919191;
+}
+
+@media (max-width: 699px) {
+    .rating-text {
+        font-size: 16px;
+    }
 }
 
 /**

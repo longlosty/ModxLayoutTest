@@ -139,12 +139,12 @@ new Swiper("#sliderServices .swiper", {
       },
 });
 
-/* Section: About */
-const aboutMblImg = document.querySelector('.about-image');
-const clientWidth = window.clientWidth;
+/* Section: Reviews */
+new Swiper("#sliderReviews .swiper", {
+  slidesPerView: 2,
+  spaceBetween: 15,
+});
 
-if(clientWidth < 699) aboutMblImg.classList.add('active')
-    else aboutMblImg.classList.remove('active');
 
 
 
