@@ -134,10 +134,28 @@ new Swiper("#sliderServices .swiper", {
 
     loop: true,
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".services-next",
+        prevEl: ".services-prev",
       },
 });
+
+new Swiper("#sliderServices .swiper", {
+  slidesPerView: 5,
+  spaceBetween: 15,
+
+  breakpoints: {
+      549: {
+      spaceBetween: 20,
+      }   
+  },
+
+  loop: true,
+  navigation: {
+    nextEl: ".mbl-next",
+    prevEl: ".mbl-prev",
+    },
+});
+
 
 /* Section: Reviews */
 new Swiper("#sliderReviews .swiper", {
@@ -145,6 +163,24 @@ new Swiper("#sliderReviews .swiper", {
   spaceBetween: 15,
 });
 
+/* Section: Articles */
+new Swiper("#sliderArticles .swiper", {
+  slidesPerView: 2,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: ".articles-next",
+    prevEl: ".articles-prev",
+  },
+})
+
+new Swiper("#sliderArticles .swiper", {
+  slidesPerView: 2,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: ".mbl-next",
+    prevEl: ".mbl-prev",
+  },
+})
 
 
 
