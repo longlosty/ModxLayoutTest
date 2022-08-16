@@ -24,8 +24,6 @@ window.addEventListener("scroll", function() {
     }
 })
 
-bookingBtn.style = "margin:" + introH;
-
 /* Section: Bath-houses */
 new Swiper("#sb1 .swiper", {
     loop: true,

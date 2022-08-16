@@ -1060,7 +1060,7 @@ header {
     width: 1920px;
     height: 423px;
     position: absolute;
-    bottom: -1px;
+    bottom: -2px;
 }
 
 @media (max-width: 699px) {
@@ -1070,6 +1070,10 @@ header {
         margin-top: 65px;
         margin-bottom: 63px;
         height: 600px;
+    }
+
+    .about::after {
+        display: none;
     }
 }
 
@@ -1721,7 +1725,12 @@ header {
 .articles-title-mbl {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 25px;
+}
+
+@media (max-width: 699px) {
+    .articles-title-mbl {
+        margin-bottom: 25px;
+    }
 }
 
 .articles-header-mbl {
@@ -1811,34 +1820,81 @@ footer {
     display: flex;
 }
 
+@media (max-width: 1199px) {
+    footer {
+        flex-direction: column;
+    }
+}
+
 .footer-info {
     width: 50%;
     color: #fff;
-    padding-bottom: 10px;
+    padding: 0 15px 10px 15px;
 }
 
-.footer-map {
-    margin-right: 0;
-    margin-left: auto;
+@media (max-width: 1799px) {
+    .footer-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1199px) {
+    .footer-info {
+        align-items: flex-start;
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+}
+
+@media (max-width: 799px) {
+    .footer-info {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+}
+
+@media (max-width: 699px) {
+    .footer-info {
+        display: none;
+    }
 }
 
 .info-blocks {
     display: flex;
-    padding-left: 340px;
+    justify-content: flex-end;
 }
 
 .info-block:first-child {
     padding-right: 163px;
 }
 
+@media (max-width:1799px) {
+    .info-block:first-child {
+        padding-right: 77px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .info-block:first-child {
+        padding-right: 100px;
+    }
+}
+
 .info-block:last-child {
     padding-left: 66px;
+}
+
+@media (max-width: 1199px) {
+    .info-block:last-child {
+        padding-left: 100px;
+    }
 }
 
 .info-logo {
     width: 143px;
     margin-top: 31px;
-
 }
 
 address {
@@ -1871,6 +1927,121 @@ address p a:hover {
 .info-socials a{
     margin-right: 15px;
     text-decoration: none;
+}
+
+/* Footer mobile */
+.footer-mobile {
+    background: #7C9577;
+    padding: 0 15px;
+    width: 100%;
+    display: none;
+}
+
+@media (max-width: 699px) {
+    .footer-mobile {
+        display: block;
+    }
+}
+
+.footer-logo {
+    width: 146px;
+    padding-top: 25px;
+    margin-bottom: 11spx;
+}
+
+.footer-logo img {
+    width: 100%;
+}
+
+.fnav-mbl {
+    display: flex;
+    flex-direction: column;
+}
+
+.fnav-mbl-title {
+    font-size: 20px;
+    line-height: 0.9;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 25px;
+}
+
+.mbl-list {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.mbl-list a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.125;
+}
+
+.mbl-list li {
+    width: 25%;
+    margin-top: 25px;
+}
+
+@media(max-width: 599px) {
+    .mbl-list li {
+        width: 33%;
+    }
+}
+
+.mbl-addres {
+    font-size: 16px;
+    line-height: 0.9;
+    color: #fff;
+    margin-top: 53px;
+}
+
+.mbl-socials {
+    margin-top: 30px;
+}
+
+.mbl-socials a {
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.mbl-socials::after {
+    content: "";
+    display: block;
+    border: 1px solid #D7D7D7;
+    width: 290px;
+    margin: 25px auto;
+}
+
+.mbl-privacy {
+    font-size: 14px;
+    line-height: 1.125;
+
+}
+
+.mbl-privacy .copy a {
+    align-items: center;
+}
+
+.mbl-privacy .privacy {
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 26px 0 24px 0;
+}
+
+/* Footer-map */
+.footer-map {
+    margin-right: 0;
+    margin-left: auto;
+    width: fit-content;
+    max-width: 50%;
+}
+
+@media (max-width: 1199px) {
+    .footer-map {
+        max-width: 100%;
+    }
 }
 
 /* Footer-nav */
@@ -1909,6 +2080,12 @@ address p a:hover {
     margin-top: 35px;
 }
 
+@media (max-width: 1799px) {
+    .footer-privacy {
+        margin-left: 0;
+    }
+}
+
 .copy {
     text-align: center;
     width: fit-content;
@@ -1933,6 +2110,12 @@ address p a:hover {
     color: #fff;
 
     margin-top: 26px;
+}
+
+@media (max-width:1799px) {
+    .privacy {
+        margin-top: 16px;
+    }
 }
 
 .privacy a {
