@@ -245,15 +245,21 @@ body.lock {
     }
 }
 
-@media (max-width: 549px)  {
-    .intro-form {
-        margin-top: 50px;
+@media (max-height: 799px) {
+    .intro-form img {
+        display: none;
     }
 }
 
 @media (max-height: 899px){
     .intro-form {
         margin-top: 70px;
+    }
+}
+
+@media (max-width: 549px)  {
+    .intro-form {
+        margin-top: 50px;
     }
 }
 
@@ -271,6 +277,12 @@ body.lock {
 }
 
 @media (max-width: 1249px) {
+    .intro-form button {
+        display: block;
+    }
+}
+
+@media (max-height: 799px) {
     .intro-form button {
         display: block;
     }
@@ -701,6 +713,16 @@ header {
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
     border-radius: 16px;
     width: 100%;
+}
+
+@media (max-width: 399px) {
+    .bath-item .swiper-slide img {
+        max-width: 290px;
+    }
+
+    .bath-item .slider {
+        max-width: 290px;
+    }
 }
 
 .bath-people {
@@ -2040,7 +2062,17 @@ address p a:hover {
 
 @media (max-width: 1199px) {
     .footer-map {
-        max-width: 100%;
+        display: none;
+    }
+}
+
+.mbl-map {
+    display: none;
+}
+
+@media (max-width: 1199px) {
+    .mbl-map {
+        display: block;
     }
 }
 
